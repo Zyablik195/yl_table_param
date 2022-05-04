@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Оформление каюты</h3>
+ <table>
+  <colgroup>
+    <col span="2" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+    <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+  </colgroup>
+  <tr>
+    <th>Цвет фона</th>
+    <th>Эмблема</th>
+  </tr>
+  <tr>
+    <th><img class="d-block" src={{first}} width='108' height="148" alt="Второй слайд"></th>
+    <th><img class="d-block" src={{second}} width='108' height="148" alt="Второй слайд"></th>
+  </tr>
+</table>
+{% endblock %}
